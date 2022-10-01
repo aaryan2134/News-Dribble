@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.container:hover {
+  background-color: var(--tertiary-color);
+}
+
+.infoContainer {
+  display: grid;
+  grid-template-columns: 5fr 1fr 5fr;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.4rem;
+}
+
+.infoContainer:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.team {
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.separator {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.date {
+  font-size: 0.75rem;
+}

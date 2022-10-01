@@ -1,0 +1,116 @@
+{
+  "code": "es",
+  "title": "NBA STATS",
+  "routes": {
+    "teams": "Equipos",
+    "players": "Jugadores"
+  },
+  "languages": {
+    "es": "Español",
+    "en": "Inglés"
+  },
+  "actions": {
+    "accept": "Aceptar",
+    "close": "Cerrar"
+  },
+  "errors": {
+    "modalTitle": "¡Vaya!",
+    "modalGenericMessage": "Parece que ha ocurrido un error. {{error}}"
+  },
+  "common": {
+    "season": "Temporada",
+    "debut": "Debut",
+    "position": "Posición",
+    "team": "Equipo",
+    "all": "Todas",
+    "retired": "Retirado",
+    "years": "Años"
+  },
+  "filters": {
+    "title": "Filtros",
+    "clear": "Borrar filtros"
+  },
+  "standings": {
+    "title": "Clasificación",
+    "win": "Victorias",
+    "loss": "Derrotas",
+    "winPctV2": "% Victorias",
+    "homeWin": "Victorias locales",
+    "homeLoss": "Derrotas locales",
+    "awayWin": "Victorias visitantes",
+    "awayLoss": "Derrotas visitantes"
+  },
+  "conferences": { "east": "Este", "west": "Oeste" },
+  "divisions": {
+    "southeast": "Sureste",
+    "atlantic": "Atlántico",
+    "central": "Central",
+    "southwest": "Suroeste",
+    "northwest": "Noroeste",
+    "pacific": "Pacífico"
+  },
+  "gamesResult": {
+    "title": "Resultados",
+    "noResults": "No hay resultados para esa fecha"
+  },
+  "newsFeed": {
+    "noResults": "No se han encontrado artículos"
+  },
+  "roster": {
+    "title": "Plantilla"
+  },
+  "calendar": {
+    "title": "Calendario"
+  },
+  "gameEvents": {
+    "shot": "Tiro",
+    "missed": "Fallado",
+    "scored": "Anotado",
+    "shotMissed": "$t(gameEvents.shot) $t(gameEvents.missed)",
+    "shotScored": "$t(gameEvents.shot) $t(gameEvents.scored)",
+    "freeThrow": "Tiro libre",
+    "block": "Tapón",
+    "rebound": "Rebote",
+    "turnover": "Pérdida de balón",
+    "foul": "Falta",
+    "violation": "Violación",
+    "possesion": "Gana posesión"
+  },
+  "basketballPositions": {
+    "G": "Base / Escolta",
+    "F": "Alero",
+    "F-C": "Ala-pívot",
+    "G-F": "Escolta / alero",
+    "F-G": "Alero / escolta",
+    "C-F": "Ala-pívot",
+    "C": "Pívot"
+  },
+  "stats": {
+    "titles": {
+      "percentChart": "Porcentaje de acierto",
+      "overallPerMinute": "Por minuto",
+      "overall": "Totales"
+    },
+    "types": {
+      "defensive": "Defensivos",
+      "offensive": "Ofensivos",
+      "total": "Totales",
+      "titular": "Titular"
+    },
+    "points": "Puntos",
+    "assists": "Asistencias",
+    "blocks": "Tapones",
+    "steals": "Robos",
+    "rebounds": "Rebotes {{ending}}",
+    "3pts": "Triples",
+    "2pts": "Tiros de campo",
+    "1pts": "Tiros libres",
+    "fouls": "Faltas",
+    "turnovers": "Pérdidas",
+    "games": "Partidos {{ending}}",
+    "minutes": "Minutos",
+    "doubles": "Dobles-dobles",
+    "triples": "Triple-dobles",
+    "plusMinus": "Plus minus"
+  }
+}

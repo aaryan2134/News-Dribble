@@ -1,0 +1,51 @@
+.playersContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 1rem 1rem 0;
+  box-shadow: 0 3px 13px 1px rgba(0, 0, 0, 0.12);
+  background: var(--bg-color-secondary);
+  border-radius: var(--border-radius);
+  padding: 2rem 1rem;
+}
+
+.playersContainer article {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.playersContainer img {
+  height: 10rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: flex-start;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .playersContainer {
+    justify-self: center;
+    margin-right: 0;
+  }
+}
+
+.title {
+  margin: 0 0 1rem 0;
+}
+
+.seasonSelect {
+  margin-top: 1rem;
+}
+
+.comparedPlayer {
+  margin-top: 1rem;
+}

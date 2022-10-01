@@ -1,0 +1,87 @@
+.container {
+  align-items: flex-end;
+  border-radius: var(--border-radius);
+  display: flex;
+  max-width: 100%;
+  padding: 1rem 1rem 0 1rem;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0 3px 13px 1px rgba(0, 0, 0, 0.12);
+  background: var(--bg-color-secondary);
+  transition: all ease 0.25s;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.24);
+}
+
+.image {
+  height: 7rem;
+  filter: url('data:image/svg+xml,\
+    <svg xmlns="http://www.w3.org/2000/svg">\
+      <filter id="naturalShadow" x="0" y="0" width="1" height="1">\
+        <feOffset in="SourceGraphic" dx="1" dy="1" />\
+        <feGaussianBlur stdDeviation="3" result="blur" />\
+        <feMerge>\
+          <feMergeNode in="blur"/>\
+          <feMergeNode in="SourceGraphic"/>\
+        </feMerge>\
+      </filter>\
+    </svg>#naturalShadow');
+}
+
+.infoContainer {
+  align-self: flex-start;
+  display: flex;
+  padding-left: 1rem;
+}
+
+.centeredInfoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0;
+}
+
+body:global(.theme-dark) :local(.image.placeholderImage) {
+  filter: invert(100%);
+}
+
+.country {
+  align-items: center;
+  display: flex;
+}
+
+.team img {
+  width: 3rem;
+}
+
+.team p {
+  margin: 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .image {
+    height: 6rem;
+  }
+  .team {
+    flex-direction: row;
+    margin-left: 0;
+  }
+  .team p {
+    text-align: left;
+    width: min-content;
+  }
+  .infoContainer {
+    flex-direction: column;
+  }
+}

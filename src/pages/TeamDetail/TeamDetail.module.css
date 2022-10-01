@@ -1,0 +1,19 @@
+.container {
+  display: grid;
+  grid-template-columns: auto 4fr;
+  column-gap: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.container details summary {
+  border: 1px solid var(--border-color);
+}
+.container section {
+  width: 100%;
+  overflow-x: auto;
+}
