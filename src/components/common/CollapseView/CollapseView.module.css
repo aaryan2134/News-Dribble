@@ -1,0 +1,34 @@
+#summary {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+details {
+  display: inline-block;
+  width: 100%;
+}
+
+details #summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] > #summary:before {
+  transform: rotate(90deg);
+}
+
+#summary:before {
+  content: "";
+  border-width: 0.6rem;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--font-color);
+  transform: rotate(0);
+  transform-origin: 0.2rem 50%;
+  transition: 0.25s transform ease;
+  position: absolute;
+  left: 1rem;
+  top: calc(50% - 0.6rem);
+}

@@ -1,0 +1,19 @@
+.listFilters {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.listFilters > * {
+  margin: 0 1rem 1rem 0;
+}
+
+.listModalFilters {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.listModalFilters select {
+  margin: 0 1rem 2rem 1rem;
+  flex: 1;
+  width: 30%;
+}

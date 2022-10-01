@@ -1,0 +1,43 @@
+.conference p {
+  font-size: 1.2rem;
+  margin: 0;
+  text-transform: capitalize;
+  transform-origin: 50% 52%;
+  transform: translateZ(0) rotate(-90deg);
+}
+
+.conference.conference-east {
+  background-color: var(--primary-color);
+}
+
+.conference.conference-west {
+  background-color: var(--secondary-color);
+}
+
+.container,
+.contentContainer {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.container table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.container table th,
+.container table td {
+  border-collapse: collapse;
+}
+
+.container details {
+  display: block;
+}
+
+.container summary {
+  border: 1px solid var(--border-color);
+}
+
+.container details[open] summary {
+  border-bottom: none;
+}

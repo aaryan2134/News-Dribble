@@ -1,0 +1,24 @@
+.title {
+    margin-top: 0;
+    text-align: center;
+}
+
+.image {
+    float: left;
+    padding-right: 1rem;
+    width: 10rem;
+}
+
+.text {
+    margin: 0;
+}
+
+.text:first-line {
+    line-height: 100%;
+}
+
+.text::after {
+    clear: both;
+    content: '';
+    display: block;
+}

@@ -1,0 +1,116 @@
+{
+  "code": "en",
+  "title": "NBA STATS",
+  "routes": {
+    "teams": "Teams",
+    "players": "Players"
+  },
+  "languages": {
+    "es": "Spanish",
+    "en": "English"
+  },
+  "actions": {
+    "accept": "Accept",
+    "close": "Close"
+  },
+  "errors": {
+    "modalTitle": "Woops!",
+    "modalGenericMessage": "Looks like an error happened. {{error}}"
+  },
+  "common": {
+    "season": "Season",
+    "debut": "Debut",
+    "position": "Position",
+    "team": "Team",
+    "all": "All",
+    "retired": "Retired",
+    "years": "Years"
+  },
+  "filters": {
+    "title": "Filters",
+    "clear": "Clear filters"
+  },
+  "standings": {
+    "title": "Standings",
+    "win": "Wins",
+    "loss": "Loses",
+    "winPctV2": "% Wins",
+    "homeWin": "Home wins",
+    "homeLoss": "Home loses",
+    "awayWin": "Visitor wins",
+    "awayLoss": "Visitor loses"
+  },
+  "conferences": { "east": "East", "west": "West" },
+  "divisions": {
+    "southeast": "Southeast",
+    "atlantic": "Atlantic",
+    "central": "Central",
+    "southwest": "Southwest",
+    "northwest": "Northwest",
+    "pacific": "Pacific"
+  },
+  "gamesResult": {
+    "title": "Results",
+    "noResults": "No results found for this date"
+  },
+  "newsFeed": {
+    "noResults": "No se han encontrado artículos"
+  },
+  "roster": {
+    "title": "Roster"
+  },
+  "calendar": {
+    "title": "Calendar"
+  },
+  "gameEvents": {
+    "shot": "Shot",
+    "missed": "Missed",
+    "scored": "Scored",
+    "shotMissed": "$t(gameEvents.shot) $t(gameEvents.missed)",
+    "shotScored": "$t(gameEvents.shot) $t(gameEvents.scored)",
+    "freeThrow": "Free throw",
+    "block": "Block",
+    "rebound": "Rebound",
+    "turnover": "Turnover",
+    "foul": "Foul",
+    "violation": "Violation",
+    "possesion": "Gains possesion"
+  },
+  "basketballPositions": {
+    "G": "Point guard / Shooting guard",
+    "F": "Forward",
+    "F-C": "Power forward",
+    "G-F": "Shooting guard / Forward",
+    "F-G": "Forward / shooting guard",
+    "C-F": "Power forward",
+    "C": "Center"
+  },
+  "stats": {
+    "titles": {
+      "percentChart": "Accuracy rate",
+      "overallPerMinute": "Per minute",
+      "overall": "Overall"
+    },
+    "types": {
+      "defensive": "Defensive",
+      "offensive": "Offensive",
+      "total": "Total",
+      "titular": "Titular"
+    },
+    "points": "Points",
+    "assists": "Assists",
+    "blocks": "Blocks",
+    "steals": "Steals",
+    "rebounds": "Rebounds {{ending}}",
+    "3pts": "Three points",
+    "2pts": "Field shots",
+    "1pts": "Free throws",
+    "fouls": "Fouls",
+    "turnovers": "Turnovers",
+    "games": "Games {{ending}}",
+    "minutes": "Minutes",
+    "doubles": "Double-double",
+    "triples": "Triple-double",
+    "plusMinus": "Plus minus"
+  }
+}
