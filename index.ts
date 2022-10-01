@@ -14,11 +14,11 @@ if (accountSid && authToken && myNumber && twilioNumber) {
     .create({
       from: twilioNumber,
       to: myNumber,
-      body: "You just sent an SMS from TypeScript using Twilio!",
+      body: "You have successfully placed your bet! For -> Memphis Grizzlies @ 1 DeSo",
     })
     .then((message) => console.log(message.sid));
 } else {
   console.error(
-    "You are missing one of the variables you need to send a message"
+    "Your message failed to send. Please check your .env file and try again."
   );
 }
