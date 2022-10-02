@@ -25,6 +25,14 @@ Keeping pace with the increasing number of matches has become very hard. So here
 - Continuous commits to keep track of the progress
 - Deployment using GitHub Pages & Vercel
 
+|![GitHub PR's]()| ![Branches - Network Graph]()
+|-|-|
+| PR Merged  | Branch History |
+
+- [Merged PR's](https://github.com/aaryan2134/News-Dribble/pulls?q=is%3Apr+is%3Aclosed)
+- [Network Graph](https://github.com/aaryan2134/News-Dribble/network)
+- [Commit History](https://github.com/aaryan2134/News-Dribble/graphs/commit-activity)
+
 ## Domain.com
 - Domain.com has been used to get a custom domain - news-dribble.tech
 - Check it out at [News Dribble](https://news-dribble.tech)
