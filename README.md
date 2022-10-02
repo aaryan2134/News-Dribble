@@ -2,7 +2,8 @@
 
 _Timeout! Time for News Dribble!!!_
 
-<hr>
+<hr></hr>
+
 ## Inspiration
 I am a big fan of NBA and personally I have been looking for platforms where I can get updates about the upcoming matches. Adding to my Crypto craze, I wanted to make a project that brings both of my passions together!
 
