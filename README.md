@@ -25,7 +25,7 @@ Keeping pace with the increasing number of matches has become very hard. So here
 - Continuous commits to keep track of the progress
 - Deployment using GitHub Pages & Vercel
 
-|![GitHub PR's]()| ![Branches - Network Graph]()
+|![GitHub PR's](https://github.com/aaryan2134/News-Dribble/blob/main/ss1.jpg)| ![Branches - Network Graph](https://github.com/aaryan2134/News-Dribble/blob/main/download.png)
 |-|-|
 | PR Merged  | Branch History |
 
