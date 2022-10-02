@@ -38,7 +38,7 @@ const TeamDetail = () => {
       <h2>{teamData?.fullName}</h2>
       <div>
           <br></br>
-          <a href="https://nft-mint-indol.vercel.app/mint?imgURL=https://cdn.nba.com/logos/nba/1610612737/global/L/logo.svg"> Mint Your Team's NFT!!! </a>
+          <a href="https://nft-mint-indol.vercel.app/mint?imgURL=https://i.redd.it/c3rjnv63sar91.png"> Mint Your Team's NFT!!! </a>
         </div>
         <br></br>
         <br></br>
