@@ -23,7 +23,7 @@ class NbaService {
   }
 
   fetchPlayers() {
-    return this.service.get("/v1/2021/players.json");
+    return this.service.get("/v1/2022/players.json");
   }
 
   fetchPlayerStats(playerId) {
@@ -31,11 +31,11 @@ class NbaService {
   }
 
   fetchTeams() {
-    return this.service.get("/v2/2021/teams.json");
+    return this.service.get("v2/2022/teams.json");
   }
 
   fetchTeamCalendar(code) {
-    return this.service.get(`/v1/2021/teams/${code}/schedule.json`);
+    return this.service.get(`/v1/2022/teams/${code}/schedule.json`);
   }
 
   fetchStandings() {

@@ -122,7 +122,7 @@ const PlayerDetail = () => {
         </article>
         <div>
           <br></br>
-          <a href="https://nft-mint-indol.vercel.app/mint?imgURL=https://i.redd.it/wmcn9euprar91.png"> Mint Your Own NFT!!! </a>
+          <a href={'https://nft-mint-indol.vercel.app/mint?imgURL=https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/' + player?.personId + '.png'}> Mint Your Own NFT!!! </a>
         </div>
       </section>
       <PlayerStats players={players} season={seasonStats} />
