@@ -23,35 +23,38 @@ class NbaService {
   }
 
   fetchPlayers() {
-    return this.service.get("/v1/2022/players.json");
+    return this.service.get("/players");
   }
 
+  //working - https://data.nba.net/10s/prod/v1/2022/players/1630173_profile.json
   fetchPlayerStats(playerId) {
-    return this.service.get(`/v1/2020/players/${playerId}_profile.json`);
+    return this.service.get(`/players/${playerId}`);
   }
 
   fetchTeams() {
-    return this.service.get("v2/2022/teams.json");
+    return this.service.get("/teams");
   }
 
+  //working
   fetchTeamCalendar(code) {
-    return this.service.get(`/v1/2022/teams/${code}/schedule.json`);
+    return this.service.get(`/teams/schedule/${code}`);
   }
 
   fetchStandings() {
-    return this.service.get("/v1/current/standings_conference.json");
+    return this.service.get("/standings");
   }
 
+  // -1 to correct the day
   fetchDayGames(date) {
-    return this.service.get(`/v1/${date}/scoreboard.json`);
+    return this.service.get(`/scoreboard/${date-1}`);
   }
 
   fetchGame({ date, gameId }) {
-    return this.service.get(`/v1/${date}/${gameId}_boxscore.json`);
+    // return this.service.get(`/boxscore/${date}/${gameId}`);
   }
 
   fetchPeriodPlays({ date, gameId, period }) {
-    return this.service.get(`/v1/${date}/${gameId}_pbp_${period}.json`);
+    // return this.service.get(`/period/${date}/${gameId}/${period}`);
   }
 }
 
