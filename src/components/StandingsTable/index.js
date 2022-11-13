@@ -18,11 +18,15 @@ import CollapseView from "components/common/CollapseView";
 const standingHeaders = [
   "win",
   "loss",
-  "winPctV2",
-  "homeWin",
-  "homeLoss",
-  "awayWin",
-  "awayLoss",
+  "defaultOrder"
+  // "homeLoss",
+  // "awayLoss",
+];
+
+const tableHeaders = [
+  "win",
+  "loss",
+  "Rank"
 ];
 
 const StandingsTable = () => {
@@ -31,6 +35,7 @@ const StandingsTable = () => {
     "fetch-standings",
     async () => {
       const response = await NbaService.fetchStandings();
+      console.log("response", response);
       return response;
     },
     {
@@ -55,9 +60,10 @@ const StandingsTable = () => {
             <thead>
               <tr>
                 <th colSpan={2} />
-                {standingHeaders.map((key) => (
+                {tableHeaders.map((key) => (
                   <th key={key}>{t(`standings.${key}`)}</th>
-                ))}
+                ))
+                }
               </tr>
             </thead>
             <tbody>
@@ -83,9 +89,10 @@ const StandingsTable = () => {
                             >{`${team.teamSitesOnly.teamName} ${team.teamSitesOnly.teamNickname}`}</Link>
                           </th>
                           {standingHeaders.map((key) => (
+                            console.log("team", team),
                             <td key={key}>
                               <div className="centered-container">
-                                {team[key]?.replace(".", ",")}
+                                {team.sortKey[key]}
                               </div>
                             </td>
                           ))}

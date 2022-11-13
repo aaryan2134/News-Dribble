@@ -71,6 +71,31 @@ const GamesResult = () => {
       >
         <ul>
           {isLoading ? (
+            <li>
+              <Spinner />
+            </li>
+          ) : !data?.numGames ? (
+            <li>
+              <p>{t("gamesResult.noResults")}</p>
+            </li>
+          ) : (
+            data.games.map((game) => {
+              var teams=parsedIdTeams;
+              const team1 = teams[game.hTeam.teamId]?.fullName;
+              const team2 = teams[game.vTeam.teamId]?.fullName;
+              const link = "https://place-bets.vercel.app/mint?imgURL=&team1=" + team1 + "&team2=" + team2;
+              return (
+                <li key={game.gameId}>
+                  <GameCard teams={parsedIdTeams} game={game} />
+                  <h4><a href={link}>Place your Bet!</a></h4>
+                </li>
+              );
+              
+            })
+          )}
+        </ul>
+        {/* <ul>
+          {isLoading ? (
             
             <li>
               <br></br>
@@ -98,7 +123,7 @@ const GamesResult = () => {
               );
             })
           )}
-        </ul>
+        </ul> */}
       </CollapseView>
     </section>
   );

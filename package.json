@@ -21,6 +21,7 @@
     "react-scripts": "4.0.3",
     "recharts": "^2.1.14",
     "redux": "^4.1.1",
+    "request": "^2.88.2",
     "twilio": "^3.82.1",
     "web-vitals": "^1.1.2"
   },
@@ -32,6 +33,7 @@
     "prepare": "husky install",
     "cypress:open": "cypress open"
   },
+  "proxy": "https://news-dribble-backend1.herokuapp.com/",
   "browserslist": {
     "production": [
       ">0.2%",
